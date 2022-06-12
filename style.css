@@ -1,0 +1,417 @@
+
+ @import url('https://fonts.google.com/specimen/Blaka+Hollow');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/*Informacje o Gierce about.html*/
+.styl{
+margin: 1%;
+padding: 1%;
+text-align: justify;
+font-weight: bold;
+border: 3px solid black;
+border-radius: 4%;
+border-color: darkcyan;
+text-shadow: 0.5px 0.5px black;
+}
+/*Stylowanie H1:Description about.html*/
+.styl1{
+    margin: 5px;
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+    border: 2px solid darkcyan;
+    border-radius: 5%;
+    }
+/*Stylowanie Headera oraz Footera*/
+header,
+footer {
+    width: inherit;
+    background-image: url('border.png');
+    background-repeat: repeat-x;
+}
+/*Stylowanie Headera*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B2D33;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+/*Logo*/
+.logoImg {
+    background: url('logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    height: 58px;
+    width: 80px;
+}
+
+.logo h1 {
+    display: block;
+    font-size: 1.4em;
+}
+
+.logo h1 span {
+    display: inline;
+}
+/*Ikona Menu*/
+.menuIcon {
+    font-size: 2.3em;
+    line-height: .5em;
+    position: absolute;
+    right: 30px;
+}
+/*Navigation Bar*/
+.navBar {
+    margin-right: 45px;
+}
+
+.navBar li {
+    display: inline-flex;
+    padding: 1px;
+}
+
+
+/*Zdjątko Flappy na Głównej Stronie*/
+.banner {
+    height: 260px;
+    /* width: 734px; */
+    background-image: url('scenery.png');
+    background-size: cover;
+    background-position: right;
+}
+/*Stylowanie Ficzerów*/
+.features {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.features h2 {
+    padding: 10px 0;
+    line-height: 15px;
+    height: 14px;
+    background-color: darkblue;
+    border: solid black;
+}
+
+.features h3 {
+    background-color: #00CCCC;
+    font-weight: 900;
+    height: 22px;
+    padding: 10px 0px;
+    line-height: 20px;
+    margin: 1%;
+    border: solid black;
+
+}
+/*Głupi Tekst Lorem Ipsum Stylowanie*/
+.lorem {
+    font-size:20px;
+    min-width:100%;
+    max-width:100%;
+    color: #171717;
+    text-align: justify;
+    border: 3px solid black;
+}
+
+/*Footer*/
+footer {
+    padding: 50px 50px 25px 50px;
+    background-color: #2B2D33;
+}
+
+.nav-ctnr {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    line-height: 2em;
+}
+/*Tekst na dole strony ©2137 FAPPAJ INC.*/
+.copyright-text {
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*wszyśko*/
+a,
+h1,
+h2 {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Tekst na dole strony ©2137 FAPPAJ INC.*/
+.copyright-text {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/*Menu na Telefony*/
+@media only screen and (max-width: 750px) {
+    .navBar {
+        display: none;
+    }
+
+    .menuIcon {
+        color: #00CCCC;
+        margin-top: 5px;
+    }
+
+    .logo h1 {
+        font-size: 2em;
+        margin-top: 2px;
+        margin-left: 95px;
+        display: block;
+    }
+
+    .logoImg {
+        margin: -8px 0 0 10px;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .menuIcon ol {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+    }
+    /*Mobil Menu*/
+    .menuIcon ol>li {
+        float: left;
+        background-color: #2B2D33;
+        width: 150px;
+    }
+
+    .menuIcon ol a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 0 5px;
+    }
+    .menuIcon ol > li> a{
+        color: aqua;
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .menuIcon ol>li>a:hover {
+        color: darkcyan;
+    }
+
+    .menuIcon ol>li:hover {
+        background-color: #00CCCC;
+    }
+
+    .menuIcon ol>li>ul {
+        list-style-type: none;
+        border: 1px solid black;
+    }
+
+    .menuIcon ol>li {
+        float: left;
+        background-color: #00CCCC;
+        width: 150px;
+        margin-left: 1px;
+    }
+
+    .menuIcon ol>li:first-child {
+        margin-left: 0;
+    }
+
+    .menuIcon ol>li>ul>li>a {
+        border-top: 2px solid darkblue;
+    }
+
+    .menuIcon ol {
+        background-color: antiquewhite;
+    }
+
+    .menuIcon ol>li>ul>li {
+        background-color: antiquewhite;
+    }
+
+    .menuIcon ol>li>ul>li:hover {
+        background-color: #00CCCC;
+    }
+
+    .menuIcon ol>li>ul>li:hover a {
+        color: #2B2D33;
+    }
+    .menuIcon ol > li > ul {
+        display:none;
+      }
+      
+    .menuIcon ol > li:hover > ul {
+        display:block;
+      }
+    .menuIcon ol > li {
+        float:left;
+        background-color:#2B2D33;
+        width:150px;
+        margin-left:1px;
+        height:2em;
+      }
+      
+    .menuIcon ol > li:hover > a {
+        color:#00CCCC;
+        background-color: #2B2D33;
+      }
+}
+
+/*Tab Menu*/
+@media only screen and (min-width: 751px) and (max-width: 1194px) {
+    .menuIcon {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 3.6em;
+    }
+
+    .logo {
+        margin-left: 25px;
+    }
+
+    .logo h1 {
+        margin-left: 95px;
+        display: block;
+    }
+
+    .logo h1 span {
+        display: block;
+    }
+
+    .logoImg {
+        margin: 0 0 0 10px;
+    }
+
+    .white {
+        color: #FFFFFF;
+    }
+
+    .yellow {
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (min-width: 1195px) {
+    footer {
+        height: 50vh;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .logo h1 {
+        margin-top: 5px;
+        font-size: 3em;
+    }
+
+    .logo h1 span {
+        margin-left: 49px;
+    }
+
+    .menuIcon {
+        display: none;
+    }
+
+    .logoImg {
+        margin-left: 180px;
+    }
+
+    .main {
+        margin: 50px 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boner {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .lorem {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .banner {
+        border: 2px solid black;
+        height: 500px;
+        width: 2000px;
+        
+    }
+
+    .features {
+        width: 520px;
+    }
+
+    .nav ul {
+        border-left: 3px solid #00CCCC;
+        padding-left: 30px;
+    }
+
+    .nav ul li {
+        line-height: 1em;
+    }
+
+    footer li a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: block;
+    }
+
+    .copyright-text {
+        color: #202227;
+        font-weight: 900;
+        display: block;
+        background-color: #00CCCC;
+        padding: 10px 0;
+        margin: auto;
+    }
+
+    .copyright-box {
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    .navBar {
+        border-bottom: #00CCCC 3px solid;
+    }
+
+    .white {
+        color: #FFFFFF;
+        border-bottom: #FFFFFF 3px solid;
+        padding-bottom: 13px;
+    }
+
+    .yellow {
+        color: #FFFFFF;
+    }
+}
